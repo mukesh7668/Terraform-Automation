@@ -22,7 +22,7 @@ pipeline {
         
         stage ("plan") {
             steps {
-                sh ('terraform plan -out=plan.out') 
+                sh ('terraform apply "plan.out"') 
             }
         }
 
