@@ -12,7 +12,7 @@ pipeline {
             steps {
                 sh ("terraform init -reconfigure") 
             }
-        }
+        
         
         stage ("terraform validate") {
             steps {
@@ -33,4 +33,5 @@ pipeline {
            }
         }
     }
+}
 }
