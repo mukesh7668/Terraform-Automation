@@ -26,7 +26,7 @@ pipeline {
             }
         }
 
-        stage (" Action") {
+        stage ("action") {
             steps {
                 echo "Terraform action is --> ${action}"
                 sh ('terraform ${action} --auto-approve') 
